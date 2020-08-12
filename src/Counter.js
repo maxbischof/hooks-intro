@@ -1,11 +1,11 @@
 import React from 'react'
 import Button from './Button'
 
-function Counter(props) {
+function Counter({increaseNumber, decreaseNumber, number}) {
   return <div>
-  <h1>{props.number}</h1>
-  <Button onclick={props.increaseNumber} text={'+'} disabled={false} />
-  <Button onclick={props.decreaseNumber} text={'-'} disabled={!props.number} />
+  <h1>{number}</h1>
+  <Button onclick={increaseNumber} text={'+'} disabled={false} />
+  <Button onclick={decreaseNumber} text={'-'} disabled={!number} />
   </div>
 }
 

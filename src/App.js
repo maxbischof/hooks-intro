@@ -14,8 +14,9 @@ function App() {
   return <div>
     <h1>{number}</h1>
     <button onClick={adOneToNumber}>+</button>
-    <button onClick={removeOneFromNumber}>-</button>
-        </div>
+    {/* {number ? <button onClick={removeOneFromNumber}>-</button> : ''} */}
+    <button onClick={removeOneFromNumber} disabled={number ? false : true}>-</button>
+    </div>
 }
 
 

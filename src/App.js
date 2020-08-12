@@ -4,19 +4,19 @@ import Counter from './Counter'
 function App() {
   const [number, setNumber] = useState(0)
 
-  const adOneToNumber = () => {
+  const increaseNumber = () => {
     setNumber(number + 1)
   }
 
-  const removeOneFromNumber = () => {
+  const decreaseNumber = () => {
     setNumber(number - 1)
   }
 
   return (
     <div>
       <Counter
-        adOneToNumber={adOneToNumber}
-        removeOneFromNumber={removeOneFromNumber}
+        increaseNumber={increaseNumber}
+        decreaseNumber={decreaseNumber}
         number={number}
       />
     </div>

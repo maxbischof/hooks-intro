@@ -4,8 +4,8 @@ import Button from './Button'
 function Counter(props) {
   return <div>
   <h1>{props.number}</h1>
-  <Button onclick={props.adOneToNumber} text={'+'} disabled={false} />
-  <Button onclick={props.removeOneFromNumber} text={'-'} disabled={!props.number} />
+  <Button onclick={props.increaseNumber} text={'+'} disabled={false} />
+  <Button onclick={props.decreaseNumber} text={'-'} disabled={!props.number} />
   </div>
 }
 
